@@ -1,4 +1,4 @@
-package leetcode.arrays.easy.BestTimeToBuyAndSellStockII;
+package leetcode.greedy.easy.BestTimeToBuyAndSellStockII;
 
 
 /*
