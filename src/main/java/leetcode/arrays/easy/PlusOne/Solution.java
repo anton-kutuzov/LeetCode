@@ -2,18 +2,23 @@ package leetcode.arrays.easy.PlusOne;
 
 
 /*
-Given an array, rotate the array to the right by k steps, where k is non-negative.
+Given a non-empty array of digits representing a non-negative integer, increment one to the integer.
 
-Example:
+The digits are stored such that the most significant digit is at the head of the list, and each element in the array contains a single digit.
+
+You may assume the integer does not contain any leading zero, except the number 0 itself.
+
 Given:
-[1,2,3,4,5,6,7] and k = 3
+digits = [1,2,3]
 Result:
-[5,6,7,1,2,3,4]
+[1,2,4]
 Explanation:
-rotate 1 steps to the right: [7,1,2,3,4,5,6]
-rotate 2 steps to the right: [6,7,1,2,3,4,5]
-rotate 3 steps to the right: [5,6,7,1,2,3,4]
+The array represents the integer 123.
 
+Solution:
+1. Iterate from end of array by 1 while the 'number + 1 > 9'
+2. If we find element and index > 0 then we add 1 to the number on 'i' position
+3. If index < 0 then we allocate new array we size +1 we write first digital as 1
 */
 public class Solution {
 

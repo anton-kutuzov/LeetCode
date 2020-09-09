@@ -2,15 +2,16 @@ package leetcode.arrays.easy.MoveZeroes;
 
 
 /*
-Given a non-empty array of digits representing a non-negative integer, plus one to the integer.
-
-The digits are stored such that the most significant digit is at the head of the list, and each element in the array contain a single digit.
+Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
 Example:
 Given:
-[1,2,3]
+[0,1,0,3,12]
 Result:
-[1,2,4]
+[1,3,12,0,0]
+
+Solution:
+We use two pointer 'i' and 'j'. We iterate by array and if we find non-zero number we write it on position 'j' and increase j.
 */
 public class Solution {
 

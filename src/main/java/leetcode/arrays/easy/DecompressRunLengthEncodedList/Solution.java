@@ -1,6 +1,8 @@
 package leetcode.arrays.easy.DecompressRunLengthEncodedList;
 
 
+import java.util.Arrays;
+
 /*
 We are given a list nums of integers representing a list compressed with run-length encoding.
 Consider each adjacent pair of elements [freq, val] = [nums[2*i], nums[2*i+1]] (with i >= 0).
@@ -27,11 +29,8 @@ class Solution {
         int[] output = new int[outputLen];
         int outputIndex = 0;
         for (int i = 0; i < nums.length - 1; i += 2) {
-            for (int j = 0; j < nums[i]; j++) {
-                if (outputIndex >= outputLen) {
-                    return output;
-                }
-                output[outputIndex++] = nums[i+1];
+            for (int j = 0, len = nums[i]; j < len; j++) {
+                output[outputIndex++] = nums[i + 1];
             }
         }
         return output;

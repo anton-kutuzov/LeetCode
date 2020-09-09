@@ -21,6 +21,9 @@ Result:
  [1,4,6,4,1]
 ]
 
+Solution:
+1. Added first line
+2. Calculate next line by previous:
 */
 public class Solution {
 
@@ -29,10 +32,7 @@ public class Solution {
         if (numRows >= 1) {
             listList.add(Arrays.asList(1));
         }
-        if (numRows >= 2) {
-            listList.add(Arrays.asList(1, 1));
-        }
-        for (int i = 2; i < numRows; i++) {
+        for (int i = 1; i < numRows; i++) {
             listList.add(generateLine(i, listList.get(i - 1)));
         }
         return listList;

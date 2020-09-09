@@ -20,18 +20,28 @@ public class Solution {
         if (nums.length == 0) {
             return 0;
         }
-        Arrays.sort(nums);
+        if (nums.length == 1) {
+            return nums[0] >= s ? 1 : 0;
+        }
         return getSubArrayLen(s, nums);
     }
 
     private int getSubArrayLen(int s, int[] nums) {
-        int sum = 0;
-        for (int i = nums.length - 1; i >= 0; i--) {
-            sum += nums[i];
-            if (sum >= s) {
-                return nums.length - i;
+        int sum = nums[0];
+        int i = 0;
+        int j = 0;
+        int min = Integer.MAX_VALUE;
+        while (i <= j && j < nums.length - 1) {
+            while (sum < s && j < nums.length - 1) {
+                sum += nums[++j];
+            }
+            while (sum >= s && i <= j) {
+                if (min > j - i + 1) {
+                    min = (j - i + 1);
+                }
+                sum -= nums[i++];
             }
         }
-        return 0;
+        return min == Integer.MAX_VALUE ? 0 : min;
     }
 }

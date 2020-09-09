@@ -5,13 +5,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 /*
-Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
+Given a non-empty array of integers, every element appears twice except for one. Find that single one.
+Note:
+    Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 
 Example:
 Given:
 [2,2,1]
 Result:
 1
+
+Solution:
+1. Use map. Key is digital, value is count.
+2. Find first digital with count 1.
 */
 public class Solution {
     public int singleNumber(int[] nums) {
