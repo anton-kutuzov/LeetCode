@@ -5,18 +5,18 @@ class Solution:
     def num_decodings(self, s: str) -> int:
 
         @lru_cache(None)
-        def num_decodings(s: str, i: int) -> int:
+        def num_decodings(i: int) -> int:
             if i >= len(s):
                 return 1
             res = 0
             if int(s[i]):
-                res += num_decodings(s, i + 1)
+                res += num_decodings(i + 1)
             if 10 <= int(s[i:i + 2]) <= 26:
-                res += num_decodings(s, i + 2)
+                res += num_decodings(i + 2)
 
             return res
 
-        return num_decodings(s, 0) if s else 0
+        return num_decodings(0) if s else 0
 
 
 solution = Solution()
