@@ -1,0 +1,66 @@
+[project]
+name = "leetcode"
+version = "0.1.0"
+description = "LeetCode solutions in Python — clean, tested, organized by topic and difficulty."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Anton Kutuzov" }]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "ruff>=0.6",
+    "pre-commit>=3.7",
+    "pyyaml>=6.0",
+]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+pythonpath = ["src/main/python"]
+addopts = "-ra --strict-markers --strict-config"
+
+[tool.coverage.run]
+branch = true
+source = ["src/main/python"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+extend-exclude = ["target", "src/main/java", ".venv"]
+
+[tool.ruff.lint]
+select = [
+    "E", # pycodestyle errors
+    "W", # pycodestyle warnings
+    "F", # pyflakes
+    "I", # isort
+    "B", # flake8-bugbear
+    "UP", # pyupgrade
+    "SIM", # flake8-simplify
+    "RUF", # ruff-specific
+]
+ignore = [
+    "E501", # line too long (handled by formatter)
+    "B008", # function call in default arg (common in LeetCode signatures)
+]
+
+[tool.ruff.lint.per-file-ignores]
+# `solution.py` files mirror LeetCode signatures and include ad-hoc `__main__`
+# scratchpads — keep the rules pragmatic.
+"src/main/python/**/solution.py" = [
+    "UP006", "UP007", "UP035", "UP045", # keep typing.List/Optional/etc matching LeetCode
+    "E712", # `== True` is fine in scratch asserts
+    "E741", # one-letter ambiguous names (l, I, O) are LeetCode-given
+    "B007", # unused loop var in scratch code
+    "SIM108", "SIM113", # don't push idiom rewrites in algo code
+    "F841", # unused vars in scratch
+    "RUF001", # unicode lookalikes in problem text
+]
