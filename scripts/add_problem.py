@@ -221,14 +221,27 @@ def strip_examples_from_html(content_html: str) -> str:
     The user wants to come up with their own test cases, so we drop:
       - every `<pre>...</pre>` block (LeetCode wraps Input/Output bodies there)
       - every `<p>` that carries an "Example N:" header
+      - every `<p>` that starts with "Input:" / "Output:" / "Explanation:"
+        (some problems use raw paragraphs instead of `<pre>` blocks)
       - runs of empty `<p>&nbsp;</p>` spacers left behind
     """
     content_html = re.sub(
         r"<pre\b[^>]*>.*?</pre>", "", content_html, flags=re.DOTALL | re.IGNORECASE
     )
+
+    drop_marker = re.compile(
+        r"(?:Example\s*\d+\s*:?|Input\s*:|Output\s*:|Explanation\s*:)",
+        re.IGNORECASE,
+    )
+
+    def maybe_drop(m: re.Match) -> str:
+        # strip tags inside the paragraph, then look at the leading text
+        inner_text = re.sub(r"<[^>]+>", "", m.group(0)).strip()
+        return "" if drop_marker.match(inner_text) else m.group(0)
+
     content_html = re.sub(
         r"<p\b[^>]*>.*?</p>",
-        lambda m: "" if re.search(r"Example\s*\d+\s*:?", m.group(0)) else m.group(0),
+        maybe_drop,
         content_html,
         flags=re.DOTALL | re.IGNORECASE,
     )
