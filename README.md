@@ -10,11 +10,11 @@ pytest tests for the ones I've cleaned up. Whenever I notice a pattern repeats
 across problems I jot it down in [docs/PATTERNS.md](docs/PATTERNS.md) — that's
 turned into a decent "what shape is this problem" cheatsheet for myself.
 
-![Solved](https://img.shields.io/badge/Solved-57-blue) ![Easy](https://img.shields.io/badge/Easy-17-brightgreen) ![Medium](https://img.shields.io/badge/Medium-39-yellow) ![Hard](https://img.shields.io/badge/Hard-1-red)
+![Solved](https://img.shields.io/badge/Solved-58-blue) ![Easy](https://img.shields.io/badge/Easy-17-brightgreen) ![Medium](https://img.shields.io/badge/Medium-40-yellow) ![Hard](https://img.shields.io/badge/Hard-1-red)
 
 | Total  | Easy | Medium | Hard |
 |:------:|:----:|:------:|:----:|
-| **57** |  17  |   39   |  1   |
+| **58** |  17  |   40   |  1   |
 
 ## Solutions
 
@@ -88,12 +88,13 @@ turned into a decent "what shape is this problem" cheatsheet for myself.
 | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache/)                             | 🟡 Medium  |       [📁](src/main/python/146_LRUCache)       |
 | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | 🟡 Medium  | [📁](src/main/python/347_TopKFrequentElements) |
 
-### Two Pointers (6)
+### Two Pointers (7)
 
 |   # | Title                                                                                                 | Difficulty |                      Solution                       |
 |----:|-------------------------------------------------------------------------------------------------------|:----------:|:---------------------------------------------------:|
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)                                   |  🟢 Easy   |      [📁](src/main/python/125_ValidPalindrome)      |
 | 643 | [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)               |  🟢 Easy   |  [📁](src/main/python/643_MaximumAverageSubarrayI)  |
+|  15 | [3Sum](https://leetcode.com/problems/3sum/)                                                           | 🟡 Medium  |            [📁](src/main/python/15_3Sum)            |
 | 167 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | 🟡 Medium  | [📁](src/main/python/167_TwoSum2InputArrayIsSorted) |
 | 209 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)                 | 🟡 Medium  |  [📁](src/main/python/209_MinimumSizeSubarraySum)   |
 | 986 | [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/)             | 🟡 Medium  | [📁](src/main/python/986_IntervalListIntersections) |

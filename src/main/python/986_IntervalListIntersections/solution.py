@@ -4,6 +4,7 @@ https://leetcode.com/problems/interval-list-intersections/
 """
 
 from __future__ import annotations
+
 from typing import List
 
 
