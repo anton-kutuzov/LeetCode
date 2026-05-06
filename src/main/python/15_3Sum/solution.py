@@ -6,9 +6,6 @@ https://leetcode.com/problems/3sum/
 from __future__ import annotations
 
 
-# [1,2,0,1,0,0,0,0]
-# [0,0,0,0,0,1,1,2]
-
 class Solution:
     def threeSum(self, nums: list[int]) -> list[list[int]]:
 
