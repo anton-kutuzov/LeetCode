@@ -10,11 +10,11 @@ pytest tests for the ones I've cleaned up. Whenever I notice a pattern repeats
 across problems I jot it down in [docs/PATTERNS.md](docs/PATTERNS.md) — that's
 turned into a decent "what shape is this problem" cheatsheet for myself.
 
-![Solved](https://img.shields.io/badge/Solved-58-blue) ![Easy](https://img.shields.io/badge/Easy-17-brightgreen) ![Medium](https://img.shields.io/badge/Medium-40-yellow) ![Hard](https://img.shields.io/badge/Hard-1-red)
+![Solved](https://img.shields.io/badge/Solved-59-blue) ![Easy](https://img.shields.io/badge/Easy-17-brightgreen) ![Medium](https://img.shields.io/badge/Medium-40-yellow) ![Hard](https://img.shields.io/badge/Hard-2-red)
 
 | Total  | Easy | Medium | Hard |
 |:------:|:----:|:------:|:----:|
-| **58** |  17  |   40   |  1   |
+| **59** |  17  |   40   |  2   |
 
 ## Solutions
 
@@ -76,17 +76,18 @@ turned into a decent "what shape is this problem" cheatsheet for myself.
 | 2375 | [Construct Smallest Number From DI String](https://leetcode.com/problems/construct-smallest-number-from-di-string/) | 🟡 Medium  | [📁](src/main/python/2375_ConstructSmallestNumberFromDIString) |
 | 2390 | [Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/)                         | 🟡 Medium  |      [📁](src/main/python/2390_RemovingStarsFromAString)       |
 
-### Hash Table (7)
+### Hash Table (8)
 
-|   # | Title                                                                             | Difficulty |                    Solution                    |
-|----:|-----------------------------------------------------------------------------------|:----------:|:----------------------------------------------:|
-|   1 | [Two Sum](https://leetcode.com/problems/two-sum/)                                 |  🟢 Easy   |         [📁](src/main/python/1_TwoSum)         |
-|  13 | [Roman To Integer](https://leetcode.com/problems/roman-to-integer/)               |  🟢 Easy   |    [📁](src/main/python/13_RomanToInteger)     |
-| 169 | [Majority Element](https://leetcode.com/problems/majority-element/)               |  🟢 Easy   |   [📁](src/main/python/169_MajorityElement)    |
-|  12 | [Integer To Roman](https://leetcode.com/problems/integer-to-roman/)               | 🟡 Medium  |    [📁](src/main/python/12_IntegerToRoman)     |
-|  36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                       | 🟡 Medium  |      [📁](src/main/python/36_ValidSudoku)      |
-| 146 | [LRU Cache](https://leetcode.com/problems/lru-cache/)                             | 🟡 Medium  |       [📁](src/main/python/146_LRUCache)       |
-| 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | 🟡 Medium  | [📁](src/main/python/347_TopKFrequentElements) |
+|   # | Title                                                                               | Difficulty |                    Solution                     |
+|----:|-------------------------------------------------------------------------------------|:----------:|:-----------------------------------------------:|
+|   1 | [Two Sum](https://leetcode.com/problems/two-sum/)                                   |  🟢 Easy   |         [📁](src/main/python/1_TwoSum)          |
+|  13 | [Roman To Integer](https://leetcode.com/problems/roman-to-integer/)                 |  🟢 Easy   |     [📁](src/main/python/13_RomanToInteger)     |
+| 169 | [Majority Element](https://leetcode.com/problems/majority-element/)                 |  🟢 Easy   |    [📁](src/main/python/169_MajorityElement)    |
+|  12 | [Integer To Roman](https://leetcode.com/problems/integer-to-roman/)                 | 🟡 Medium  |     [📁](src/main/python/12_IntegerToRoman)     |
+|  36 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)                         | 🟡 Medium  |      [📁](src/main/python/36_ValidSudoku)       |
+| 146 | [LRU Cache](https://leetcode.com/problems/lru-cache/)                               | 🟡 Medium  |       [📁](src/main/python/146_LRUCache)        |
+| 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)   | 🟡 Medium  | [📁](src/main/python/347_TopKFrequentElements)  |
+|  76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) |  🔴 Hard   | [📁](src/main/python/76_MinimumWindowSubstring) |
 
 ### Two Pointers (7)
 
