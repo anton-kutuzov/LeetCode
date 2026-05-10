@@ -10,11 +10,11 @@ pytest tests for the ones I've cleaned up. Whenever I notice a pattern repeats
 across problems I jot it down in [docs/PATTERNS.md](docs/PATTERNS.md) — that's
 turned into a decent "what shape is this problem" cheatsheet for myself.
 
-![Solved](https://img.shields.io/badge/Solved-59-blue) ![Easy](https://img.shields.io/badge/Easy-17-brightgreen) ![Medium](https://img.shields.io/badge/Medium-40-yellow) ![Hard](https://img.shields.io/badge/Hard-2-red)
+![Solved](https://img.shields.io/badge/Solved-60-blue) ![Easy](https://img.shields.io/badge/Easy-18-brightgreen) ![Medium](https://img.shields.io/badge/Medium-40-yellow) ![Hard](https://img.shields.io/badge/Hard-2-red)
 
 | Total  | Easy | Medium | Hard |
 |:------:|:----:|:------:|:----:|
-| **59** |  17  |   40   |  2   |
+| **60** |  18  |   40   |  2   |
 
 ## Solutions
 
@@ -30,10 +30,11 @@ turned into a decent "what shape is this problem" cheatsheet for myself.
 |  238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)                                                             | 🟡 Medium  |             [📁](src/main/python/238_ProductOfArrayExceptSelf)              |
 | 1769 | [Minimum Number of Operations to Move All Balls to Each Box](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/) | 🟡 Medium  | [📁](src/main/python/1769_MinimumNumberOfOperationsToMoveAllBallsToEachBox) |
 
-### String (1)
+### String (2)
 
 |    # | Title                                                                                                         | Difficulty |                         Solution                          |
 |-----:|---------------------------------------------------------------------------------------------------------------|:----------:|:---------------------------------------------------------:|
+|   14 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                 |  🟢 Easy   |       [📁](src/main/python/14_LongestCommonPrefix)        |
 | 2138 | [Divide a String Into Groups of Size K](https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/) |  🟢 Easy   | [📁](src/main/python/2138_DivideAStringIntoGroupsOfSizeK) |
 
 ### Linked List (4)
