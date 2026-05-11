@@ -10,11 +10,11 @@ pytest tests for the ones I've cleaned up. Whenever I notice a pattern repeats
 across problems I jot it down in [docs/PATTERNS.md](docs/PATTERNS.md) — that's
 turned into a decent "what shape is this problem" cheatsheet for myself.
 
-![Solved](https://img.shields.io/badge/Solved-60-blue) ![Easy](https://img.shields.io/badge/Easy-18-brightgreen) ![Medium](https://img.shields.io/badge/Medium-40-yellow) ![Hard](https://img.shields.io/badge/Hard-2-red)
+![Solved](https://img.shields.io/badge/Solved-61-blue) ![Easy](https://img.shields.io/badge/Easy-19-brightgreen) ![Medium](https://img.shields.io/badge/Medium-40-yellow) ![Hard](https://img.shields.io/badge/Hard-2-red)
 
 | Total  | Easy | Medium | Hard |
 |:------:|:----:|:------:|:----:|
-| **60** |  18  |   40   |  2   |
+| **61** |  19  |   40   |  2   |
 
 ## Solutions
 
@@ -132,10 +132,11 @@ turned into a decent "what shape is this problem" cheatsheet for myself.
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | 🟡 Medium  | [📁](src/main/python/17_LetterCombinationsOfAPhoneNumber) |
 | 22 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)                                   | 🟡 Medium  |       [📁](src/main/python/22_GenerateParentheses)        |
 
-### Math (3)
+### Math (4)
 
 |    # | Title                                                                                                                                     | Difficulty |                                Solution                                |
 |-----:|-------------------------------------------------------------------------------------------------------------------------------------------|:----------:|:----------------------------------------------------------------------:|
+|    9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                                     |  🟢 Easy   |                [📁](src/main/python/9_PalindromeNumber)                |
 | 2566 | [Maximum Difference by Remapping a Digit](https://leetcode.com/problems/maximum-difference-by-remapping-a-digit/)                         |  🟢 Easy   |     [📁](src/main/python/2566_MaximumDifferenceByRemappingADigit)      |
 |    7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                                                         | 🟡 Medium  |                 [📁](src/main/python/7_ReverseInteger)                 |
 | 1432 | [Max Difference You Can Get From Changing an Integer](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/) | 🟡 Medium  | [📁](src/main/python/1432_MaxDifferenceYouCanGetFromChangingAnInteger) |
